@@ -1,0 +1,15 @@
+.each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 350px;
+    overflow: 'visible'
+  }
+  
+  .each-slide-effect span {
+    padding: 10px;
+    font-size: 10px;
+    background: #efefef;
+    text-align: center;
+  }

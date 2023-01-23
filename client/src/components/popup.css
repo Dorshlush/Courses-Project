@@ -1,0 +1,92 @@
+.modal-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 15%;
+    
+    
+}
+
+.close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    height: 16px;
+    text-decoration: none;
+    width: 20px;
+}
+
+.close svg {
+    width: 16px;
+}
+
+.modal-wrapper {
+    align-items: center;
+    background: rgba(39, 38, 38, 0.9);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0%;
+    max-height: 100%;
+}
+a {
+    color: rgb(247, 241, 241);
+}
+#modal {
+    z-index: 9999;
+   
+}
+
+
+
+#modal .modal-body {
+    max-width: 400px;
+    max-height: 300px;
+    color: black;
+    background-color: azure;
+    opacity: 1;
+    transform: translateY(-100px);
+    transition: opacity 1s ease-in-out;
+    width: 100%;
+    z-index: 1;
+    margin-top: 20%;
+    margin-left: 37%;
+}
+
+#modal:target .modal-body {
+    opacity: 1;
+    transform: translateY(1);
+}
+
+.outside-trigger {
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.button__link {
+    text-decoration: none;
+}
+
+.confirm-btn {
+    margin-top: 15%;
+    color: rgb(42, 42, 42);
+    background-color: rgb(247, 12, 12,0.85);
+    height: 40px;
+    width: 80px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.confirm-btn:hover {
+    background-color: darkred;
+    cursor: pointer;
+}
