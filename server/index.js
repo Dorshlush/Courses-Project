@@ -15,7 +15,7 @@ const cors = require('cors');
 console.log(` this is the node env ${process.env.NODE_ENV}`) //und
 console.log(app.get('env'))
 app.use(cors({
-  origin: ['http://localhost:3000']
+  origin: ['https://coursesprojects.onrender.com/']
 }));
 
 
