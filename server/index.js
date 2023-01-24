@@ -14,9 +14,7 @@ const cors = require('cors');
 
 console.log(` this is the node env ${process.env.NODE_ENV}`) //und
 console.log(app.get('env'))
-app.use(cors({
-  origin: ['https://coursesprojects.onrender.com/']
-}));
+app.use(cors(*));
 
 
 app.use(express.json()); // conver json to javascript and javascript to json
